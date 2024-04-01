@@ -1,0 +1,96 @@
+@use "../../style/main.scss";
+@use "../../style/page-name.scss";
+
+:root {
+  --common-padding: 16px;
+  --common-shadow: 16px 16px 16px 16px whitesmoke;
+  --common-radius: 12px;
+  --common-transition: 0.5s ease-in;
+}
+
+.payment-sistem {
+  display: grid;
+  gap: 12px;
+}
+
+.info-s,
+.info-c {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: var(--common-padding);
+  box-shadow: var(--common-shadow);
+  border-radius: var(--common-radius);
+  transition: var(--common-transition);
+
+  position: relative;
+  overflow: hidden;
+
+  &::before {
+    width: 0;
+    left: 0;
+    bottom: 0;
+    height: 100%;
+    position: absolute;
+    content: "";
+    border-bottom: 2px solid green;
+    transition: width 0.3s ease;
+  }
+
+  &:hover::before {
+    opacity: 0.7;
+    transform: opacity s;
+    cursor: pointer;
+    width: 100%;
+  }
+}
+
+.info-s {
+  gap: 66px;
+}
+
+.info-c {
+  gap: 45px;
+}
+
+.image {
+  display: block;
+  pointer-events: none;
+}
+
+.sistem {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 12px;
+
+  img {
+    border-radius: 12px;
+    background: rgb(247, 247, 247);
+    width: 35px;
+    height: 35px;
+  }
+}
+
+h2 {
+  color: rgb(0, 0, 0);
+  font-family: "Jost";
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 100%;
+  letter-spacing: 0px;
+}
+
+h3 {
+  color: rgb(29, 29, 31);
+  font-family: "Jost";
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 100%;
+  letter-spacing: 0px;
+  text-align: center;
+}
+
+.selected {
+  border: 2px solid green;
+}

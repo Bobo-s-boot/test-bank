@@ -1,0 +1,61 @@
+@use "../../style/main.scss";
+
+.backround {
+  border-radius: 12px 12px 32px 32px;
+
+  background: linear-gradient(
+    180deg,
+    rgb(84, 49, 223),
+    rgba(120, 92, 230, 0) 100%
+  );
+  // background-image: url("file:///C:/Users/%D0%90%D0%BB%D0%BB%D0%BE/OneDrive/Desktop/Work/fullstack-2/front/public/img/fone.png");
+}
+
+.desc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 0;
+  margin-top: 32px;
+
+  h1 {
+    color: rgb(255, 255, 255);
+    font-family: "Jost";
+    font-size: 42px;
+    font-weight: 600;
+    line-height: 100%;
+    word-spacing: 0px;
+    text-align: center;
+  }
+
+  p {
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-family: "Jost";
+    font-weight: 400;
+    line-height: 100%;
+    word-spacing: 0px;
+    text-align: center;
+  }
+}
+
+.image {
+  float: inline-end;
+  pointer-events: none;
+
+  img {
+    width: 900px;
+    height: 780px;
+    margin: -185px;
+  }
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}

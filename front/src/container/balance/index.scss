@@ -1,0 +1,152 @@
+@use "../../style/main.scss" as main;
+@use "../../style/transaction.scss" as accrual;
+
+.header {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  gap: 20px;
+  background: linear-gradient(
+    135deg,
+    rgb(104, 226, 222) 0%,
+    rgb(73, 44, 187) 100%
+  );
+  border-radius: 12px;
+  padding: 10px;
+  height: 140px;
+
+  .info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 130px;
+    align-items: center;
+    font-family: "Jost";
+    font-size: 16px;
+    font-weight: 400;
+    color: rgb(243, 245, 255);
+  }
+}
+
+.price {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  align-items: center;
+  font-family: "Jost";
+  font-size: 34px;
+  font-weight: 600;
+  color: rgb(243, 245, 255);
+}
+
+.events-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+}
+
+.event {
+  display: flex;
+  flex-direction: column;
+  background: white;
+  border-radius: 40px;
+
+  img {
+    border: 0px solid rgb(255, 255, 255);
+    border-radius: 100px;
+    background: rgb(91, 148, 233);
+    width: 40px;
+    height: 40px;
+    margin: 12px;
+  }
+
+  p {
+    color: rgb(29, 29, 31);
+    font-family: "Jost";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 100%;
+    text-align: center;
+  }
+}
+
+.list {
+  margin-top: 20px;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.info-block {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  gap: 225px;
+
+  &:hover {
+    opacity: 0.7;
+    transform: opacity s;
+    cursor: pointer;
+  }
+}
+
+.event-block {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 12px;
+
+  img {
+    border-radius: 12px;
+    background: rgb(247, 247, 247);
+    margin: 0px 12px;
+    width: 35px;
+    height: 35px;
+    pointer-events: none;
+  }
+
+  .recipt-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 8px;
+  }
+
+  .time-block {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+
+    span {
+      color: rgb(147, 145, 153);
+      font-family: "Jost";
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 100%;
+      text-align: center;
+    }
+  }
+
+  h2 {
+    color: rgb(29, 29, 31);
+    font-family: "Jost";
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  time {
+    display: flex;
+    color: rgb(147, 145, 153);
+    font-family: "Jost";
+    font-size: 12px;
+    font-weight: 400;
+    text-align: center;
+  }
+}

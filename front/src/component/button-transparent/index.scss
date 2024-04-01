@@ -1,0 +1,29 @@
+.button-transparent {
+  border-radius: 12px;
+  background: rgb(255, 255, 255);
+  color: rgb(119, 92, 230);
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  border: 1px solid rgb(119, 92, 230);
+  padding: 16px 140px 16px 140px;
+  font-family: "Jost";
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  width: 350px;
+  height: 46px;
+  white-space: nowrap;
+
+  &:hover {
+    opacity: 0.7;
+    transition: opacity 0.7s;
+  }
+}
+
+.href {
+  text-decoration: none;
+}

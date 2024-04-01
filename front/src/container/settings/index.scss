@@ -1,0 +1,18 @@
+@use "../../style/main.scss" as main;
+@use "../../style/page-name.scss" as page-name;
+
+h1 {
+  color: rgb(29, 29, 31);
+  font-family: "Jost";
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 100%;
+}
+
+h2 {
+  color: rgb(0, 0, 0);
+  font-family: "Jost";
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 100%;
+}

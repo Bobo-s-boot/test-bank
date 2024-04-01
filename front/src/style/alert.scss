@@ -1,0 +1,15 @@
+.alert--box {
+  display: flex;
+  align-items: center;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  padding: 9px 12px;
+  color: rgb(242, 136, 61);
+  background: rgba(242, 136, 61, 0.1);
+  flex-direction: row;
+  gap: 72px;
+}
+
+.alert--disabled {
+  display: none;
+}

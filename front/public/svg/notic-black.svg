@@ -1,0 +1,15 @@
+<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>
+			Created with Pixso.
+	</desc>
+	<defs>
+		<clipPath id="clip1_1188">
+			<rect id="bell-ringing" width="20.000000" height="20.000000" transform="translate(-0.287048 0.000000)" fill="white" fill-opacity="0"/>
+		</clipPath>
+	</defs>
+	<rect id="bell-ringing" width="20.000000" height="20.000000" transform="translate(-0.287048 0.000000)" fill="#FFFFFF" fill-opacity="0"/>
+	<g clip-path="url(#clip1_1188)">
+		<path id="Vector" d="M8.53 2.98C8.84 2.67 9.27 2.5 9.71 2.5C10.15 2.5 10.57 2.67 10.89 2.98C11.2 3.3 11.37 3.72 11.37 4.16C12.33 4.61 13.15 5.32 13.73 6.2C14.32 7.08 14.66 8.1 14.71 9.16L14.71 11.66C14.77 12.18 14.95 12.68 15.24 13.11C15.53 13.54 15.92 13.9 16.37 14.16L3.04 14.16C3.5 13.9 3.88 13.54 4.17 13.11C4.46 12.68 4.65 12.18 4.71 11.66L4.71 9.16C4.76 8.1 5.09 7.08 5.68 6.2C6.27 5.32 7.08 4.61 8.04 4.16C8.04 3.72 8.22 3.3 8.53 2.98Z" stroke="#1D1D1F" stroke-opacity="1.000000" stroke-width="1.500000" stroke-linejoin="round"/>
+		<path id="Vector" d="M7.21 14.16L7.21 15C7.21 15.66 7.47 16.29 7.94 16.76C8.41 17.23 9.04 17.5 9.71 17.5C10.37 17.5 11.01 17.23 11.48 16.76C11.94 16.29 12.21 15.66 12.21 15L12.21 " stroke="#1D1D1F" stroke-opacity="1.000000" stroke-width="1.500000" stroke-linejoin="round" stroke-linecap="round"/>
+	</g>
+</svg>
