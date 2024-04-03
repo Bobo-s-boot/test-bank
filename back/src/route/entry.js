@@ -4,6 +4,7 @@ const randomString = require('randomstring')
 
 let serverCode = {}
 let currentUserEmail = null
+let registerUserEmail
 
 const users = [
   {
@@ -18,16 +19,14 @@ const users = [
   },
 ]
 
-function isAuthenticated(req, res, next) {
-  if (currentUserEmail) {
-    next()
-  } else {
-    res.status(401).json({ error: 'Unauthorized' })
-  }
-}
-
-router.post('/emails', isAuthenticated, (req, res) => {
-  res.json({ email: currentUserEmail })
+router.post('/emails', (req, res) => {
+  const { email } = req.body
+  console.log('Received email:', email)
+  registerUserEmail = email
+  res.json({
+    email:
+      currentUserEmail || registerUserEmail || 'Your email',
+  })
 })
 
 function generateCode() {
@@ -149,7 +148,7 @@ router.post('/send', (req, res) => {
   }
 })
 
-router.post('/notic', isAuthenticated, (req, res) => {
+router.post('/notic', (req, res) => {
   const now = new Date()
 
   function getDaysAgo(date, days) {

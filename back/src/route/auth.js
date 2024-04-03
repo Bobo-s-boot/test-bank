@@ -1,5 +1,6 @@
 const express = require('express')
 const randomString = require('randomstring')
+const axios = require('axios')
 const router = express.Router()
 
 let userData = {}
@@ -40,20 +41,28 @@ router.post('/signup', (req, res) => {
 
   const verificationCode = generateCode()
   serverCodes[email] = verificationCode
-  userData[email] = { password, verificationCode }
+  userData[email] = { email, password, verificationCode }
 
-  console.log(
-    `Verification Code for ${email}: ${verificationCode}`,
-  )
+  console.log('Data user:', {
+    userData,
+  })
+
+  axios
+    .post('http://localhost:4000/entry/emails', {
+      email: userData[email].email,
+    })
+    .then((response) => {
+      console.log(response.data)
+    })
+    .catch((error) => {
+      console.error(error)
+    })
 
   res.json({ message: 'The code is successfully sent' })
 })
 
 router.post('/signup-confirm', (req, res) => {
   const { code, email } = req.body
-
-  console.log('Received code:', code)
-  console.log('Server codes:', serverCodes)
 
   if (serverCodes[email] === code) {
     res.json({ message: 'Corect code' })
