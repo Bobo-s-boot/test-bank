@@ -36,7 +36,7 @@ function Notic() {
             <div className="notification">
               <h2>{announcementNotification.title}</h2>
               <div className="time-block">
-                <time>{announcementNotification.day}</time>
+                <time>{announcementNotification.day} days</time>
                 <p>ago</p>
                 <p>{announcementNotification.type}</p>
               </div>
@@ -50,7 +50,7 @@ function Notic() {
             <div className="notification">
               <h2>{warningNotification.title}</h2>
               <div className="time-block">
-                <time>{warningNotification.day}</time>
+                <time>{warningNotification.day} days</time>
                 <p>ago</p>
                 <p>{warningNotification.type}</p>
               </div>
